@@ -35,5 +35,50 @@ public class Electrodomestico {
         this.consumoE = consumoE;
     }
     
+    private ConsumoEnergetico comprobarConsumoEnergetico(ConsumoEnergetico consumoE){
+        return ConsumoEnergetico.F;
+    }
+    
+    private ColoresDisponibles comprobarColor(ColoresDisponibles color){
+        return ColoresDisponibles.BLANCO;
+    }
+    
+    public double precioFinal(){
+        return 0;
+    }
+
+    public double getPrecioBase() {
+        return precioBase;
+    }
+
+    public void setPrecioBase(double precioBase) {
+        this.precioBase = precioBase;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public ColoresDisponibles getColor() {
+        return color;
+    }
+
+    public void setColor(ColoresDisponibles color) {
+        this.color = color;
+    }
+
+    public ConsumoEnergetico getConsumoE() {
+        return consumoE;
+    }
+
+    public void setConsumoE(ConsumoEnergetico consumoE) {
+        this.consumoE = consumoE;
+    }
+    
+    
     
 }
