@@ -107,6 +107,7 @@ public class Tarea0608 {
                 }
                 break;
                 case 4: {
+                    System.out.println("\n\n");
                     for (int i = 0; i < electrodomestico.size(); i++) {
                         if (electrodomestico.get(i) instanceof Television) {
                             System.out.println("TV €" + electrodomestico.get(i).precioFinal());
@@ -137,7 +138,7 @@ public class Tarea0608 {
                             }
                         }
                     }
-                    System.out.println("Valor total de TV: €" + totalTV + ".");
+                    System.out.println("\n\nValor total de TV: €" + totalTV + ".");
                     System.out.println("Valor total de Lavadoras: €" + totalLavadoras + ".");
                     System.out.println("Valor total de Electrodomesticos: €" + totalElectrodomesticos + ".");
                     System.out.println("\n\nPresione Enter para continuar...");
@@ -148,7 +149,7 @@ public class Tarea0608 {
                     break;
                 default: {
                     opcion = 0;
-                    System.out.println("\nOpción no valida.");
+                    System.out.println("\n\nOpción no valida.");
                     System.out.println("\n\nPresione Enter para volver al menu...");
                     teclado.nextLine();
                 }
