@@ -33,7 +33,7 @@ public class Tarea0608 {
         electro1= new Lavadora();
         electrodomestico.add(electro1);
         for (int i=0;i<electrodomestico.size();i++){
-            System.out.println(electrodomestico.get(i));
+            System.out.println(electrodomestico.get(i).precioFinal());
         }
     }
     
