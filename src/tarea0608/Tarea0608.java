@@ -5,6 +5,7 @@
  */
 package tarea0608;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -18,13 +19,22 @@ public class Tarea0608 {
      */
     public static void main(String[] args) {
         Scanner teclado= new Scanner (System.in);
-        String dato;
-        ConsumoEnergetico consumoE;
-        System.out.println("Ingrese un consumo: ");
-        dato=teclado.next().toUpperCase();
-        consumoE= Enum.valueOf(ConsumoEnergetico.class, dato);
-        
-        System.out.println("El consumo es: "+ConsumoEnergetico.values());
+        String datoIngresado;
+        ArrayList<Electrodomestico> electrodomestico=new ArrayList<>();
+        Lavadora lavadora;
+        Television television;
+        Electrodomestico electro1;
+        television= new Television();
+        electro1= new Electrodomestico();
+        lavadora= new Lavadora();
+        electrodomestico.add(electro1);
+        electrodomestico.add(television);
+        electrodomestico.add(lavadora);
+        electro1= new Lavadora();
+        electrodomestico.add(electro1);
+        for (int i=0;i<electrodomestico.size();i++){
+            System.out.println(electrodomestico.get(i));
+        }
     }
     
 }
